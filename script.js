@@ -26,3 +26,5 @@ function generateRoute() {
     routeLink.href = routeUrl;
     routeLink.style.display = 'block';
 }
+
+// Trigger redeployment
