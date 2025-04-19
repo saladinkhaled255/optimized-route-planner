@@ -12,10 +12,12 @@ function addLocationInput() {
 function generateRoute() {
     const locations = document.querySelectorAll('.location');
     const locationValues = Array.from(locations).map(input => input.value).filter(Boolean);
+
     if (locationValues.length < 2) {
         alert('Please enter at least two locations.');
         return;
     }
+
     const baseUrl = 'https://www.google.com/maps/dir/?api=1&travelmode=driving';
     const origin = `origin=${encodeURIComponent(locationValues[0])}`;
     const destination = `destination=${encodeURIComponent(locationValues[locationValues.length - 1])}`;
