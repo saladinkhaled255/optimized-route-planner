@@ -1,21 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Optimized Route Planner</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div id="app">
+    <header>
         <h1>Optimized Route Planner</h1>
-        <div id="locationInputs">
+    </header>
+    <main>
+        <section id="location-inputs">
+            <h2>Enter Locations</h2>
             <input type="text" placeholder="Enter location" class="location">
             <button onclick="addLocationInput()">Add Another Location</button>
-        </div>
-        <button onclick="generateRoute()">Generate Route</button>
-        <div id="output">
+            <button onclick="generateRoute()">Generate Route</button>
+        </section>
+        <section id="output">
             <a id="routeLink" href="#" target="_blank">View Optimized Route</a>
-        </div>
-    </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Optimized Route Planner</p>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
