@@ -1,5 +1,7 @@
 function addLocationInput() {
-    const inputDiv = document.getElementById('locationInputs');
+    const 
+        inputDiv = document.getElementById('locationInputs')
+    console.log('Add location button clicked');;
     const newInput = document.createElement('input');
     newInput.type = 'text';
     newInput.placeholder = 'Enter location';
